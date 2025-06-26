@@ -1,0 +1,35 @@
+[project]
+name = "tts_gui"
+version = "0.0.1"
+description = "Text to Speech - Voice Generation"
+authors = [
+    {name = "Rishi Kumar", email = "rishi.ramachandran@solitontech.com"},
+]
+dependencies = ["PyQt5", "click", "pyttsx3"]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+keywords = [
+  "offline text to speech",
+  "offline tts",
+  "pyttsx",
+  "pyttsx for python3",
+  "pyttsx3",
+  "speech",
+  "speech synthesis",
+  "text to speech",
+  "text to speech for python",
+  "tts",
+  "TTS for python3",
+  "TTS GUI"
+]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+tts_gui = "tts_gui.cli:tts_main"
+
+[tool.pdm]
+distribution = true

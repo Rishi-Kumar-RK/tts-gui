@@ -29,7 +29,7 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project.scripts]
-tts_gui = "tts_gui.cli:tts_main"
+tts-gui = "tts_gui.cli:tts_main"
 
 [tool.pdm]
 distribution = true
